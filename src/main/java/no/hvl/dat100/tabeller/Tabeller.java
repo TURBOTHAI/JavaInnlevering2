@@ -1,17 +1,36 @@
 package no.hvl.dat100.tabeller;
+import static javax.swing.JOptionPane.*;
+import static java.lang.Integer.parseInt; 
 
 public class Tabeller {
 
 	// a)
 	public static void skrivUt(int[] tabell) {
+		for(int i:tabell) {
+			System.out.print(i+" ");
+		}
 
 		// TODO
-		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
 
 	}
 
 	// b)
 	public static String tilStreng(int[] tabell) {
+		String result = tilStreng(tabell);
+		
+		System.out.print("[");
+		for (int i: tabell) {
+			System.out.print(tabell[i]);
+			if (i<tabell.length-1) {
+				System.out.print(",");
+				
+			}
+		System.out.print("]");
+		}
+		
+		
+		
+		
 
 		// TODO
 		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
