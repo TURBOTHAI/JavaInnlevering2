@@ -65,9 +65,16 @@ public class Tabeller {
 
 	// e)
 	public static int posisjonTall(int[] tabell, int tall) {
+		for (int i=0;i<tabell.length;i++) {
+			if (tabell[i]==tall) {
+				return i;
+				
+				
+			}
+			
+		}
+		return -1;
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden posisjonTall ikke implementert");
 	}
 
 	// f)
@@ -115,9 +122,22 @@ public class Tabeller {
 
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden settSammen ikke implementert");
+		int t1=tabell1.length;
+		int t2=tabell2.length;
+		int t3=t1+t2;
+		
+		int[] tabell3= new int[t3];
+		for(int i=0;i<t1;i++) {
+			tabell3[i]=tabell1[i];
+		}
+		
+		for(int i=0;i<t2;i++) {
+			tabell3[t1+i]=tabell2[i];
+		}
+		for (int i=0; i<t3;i++) {
+			System.out.println(tabell3[i]);
+		}
+		return tabell3;
 
 	}
 }
