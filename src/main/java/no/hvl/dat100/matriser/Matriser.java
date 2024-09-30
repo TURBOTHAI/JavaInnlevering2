@@ -4,9 +4,13 @@ public class Matriser {
 
 	// a)
 	public static void skrivUt(int[][] matrise) {
-		//test på endring av code
-		// TODO
-		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
+		for (int i=0;i<matrise.length;i++) {
+			for(int j=0;j<matrise[i].length;j++) {
+				System.out.print(matrise[i][j]+" ");
+			}
+			System.out.println();
+		}
+		
 	}
 
 	// b)

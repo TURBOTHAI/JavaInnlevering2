@@ -104,7 +104,7 @@ public class Tabeller {
 		}
 		
 		if(!sortert) {
-			System.out.println("listen må være sortert");
+			//System.out.println("listen må være sortert");
 	
 		for (int i =0; i<tabell.length-1;i++) {
 			for(int j=i+1;j<tabell.length;j++) {
@@ -135,7 +135,7 @@ public class Tabeller {
 			tabell3[t1+i]=tabell2[i];
 		}
 		for (int i=0; i<t3;i++) {
-			System.out.println(tabell3[i]);
+			//System.out.println(tabell3[i]);
 		}
 		return tabell3;
 
