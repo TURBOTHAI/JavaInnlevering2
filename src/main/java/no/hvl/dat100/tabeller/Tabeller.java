@@ -6,9 +6,12 @@ public class Tabeller {
 
 	// a)
 	public static void skrivUt(int[] tabell) {
-		for(int i:tabell) {
-			//System.out.print(i+" ");
+		for (int i = 0; i < tabell.length; i++) {
+
+			System.out.print(tabell[i] + ",");
 		}
+
+		// TODO
 
 	}
 
@@ -50,7 +53,7 @@ public class Tabeller {
 		for (int i =0;i<tabell.length; i++) {
 			if (tabell[i]==tall) {
 				test=true;
-				break;												//Nødvendig med break?
+				break;
 				
 			}
 		}
@@ -138,7 +141,22 @@ public class Tabeller {
 		return tabell3;
 */
 
+		int tab1 = tabell1.length;
+		int tab2 = tabell2.length;
+		int tab3 = tab1 + tab2;
 		
+		int[] nyTabell = new int[tab3];
+		
+	
+		for (int i = 0; i < tab1; i++ ) {
+			nyTabell[i] = tabell1[i];
+			
+			for (int e = tab1; e < tab3; e++) {
+				nyTabell[e] = tabell2[e-tab1];
+				
+			}
+		}
+			return nyTabell;
 
 	}
 }
