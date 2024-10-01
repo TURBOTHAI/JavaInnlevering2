@@ -6,9 +6,8 @@ public class Tabeller {
 
 	// a)
 	public static void skrivUt(int[] tabell) {
-		for (int i = 0; i < tabell.length; i++) {
-
-			System.out.print(tabell[i] + ",");
+		for(int i:tabell) {
+			//System.out.print(i+" ");
 		}
 
 		// TODO
@@ -123,7 +122,7 @@ public class Tabeller {
 
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
-	/*	int t1=tabell1.length;
+		int t1=tabell1.length;
 		int t2=tabell2.length;
 		int t3=t1+t2;
 		
@@ -139,24 +138,7 @@ public class Tabeller {
 			//System.out.println(tabell3[i]);
 		}
 		return tabell3;
-*/
 
-		int tab1 = tabell1.length;
-		int tab2 = tabell2.length;
-		int tab3 = tab1 + tab2;
-		
-		int[] nyTabell = new int[tab3];
-		
-	
-		for (int i = 0; i < tab1; i++ ) {
-			nyTabell[i] = tabell1[i];
-			
-			for (int e = tab1; e < tab3; e++) {
-				nyTabell[e] = tabell2[e-tab1];
-				
-			}
-		}
-			return nyTabell;
 
 	}
 }
