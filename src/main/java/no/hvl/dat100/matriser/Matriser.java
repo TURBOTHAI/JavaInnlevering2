@@ -16,19 +16,21 @@ public class Matriser {
 	// b)
 	public static void tilStreng(int[][] matrise) {
 
-			for(int i=0 ; i<matrise.length; i++) {
-			
-				System.out.print(" ");
+			int[][] tilStreng = {{1,2,3},{4,5,6},{7,8,9},};
 		
-				for (int j=0; j<matrise.length; j++) {
+		
+			for(int i=0 ; i<tilStreng.length; i++) {
 			
+				for (int j=0; j<tilStreng.length; j++) {
+				
+					System.out.print(tilStreng[i][j]);
+				
 					System.out.print(" ");
-	
-					System.out.print(matrise[i][j]);
-			
+				
 					}
-				System.out.print("\n");
+				System.out.print("\\n");
 			}
+		
 		
 	}
 
