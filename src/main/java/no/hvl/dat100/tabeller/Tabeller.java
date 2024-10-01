@@ -52,7 +52,7 @@ public class Tabeller {
 		for (int i =0;i<tabell.length; i++) {
 			if (tabell[i]==tall) {
 				test=true;
-				break;
+				break;												//Nødvendig med break?
 				
 			}
 		}
