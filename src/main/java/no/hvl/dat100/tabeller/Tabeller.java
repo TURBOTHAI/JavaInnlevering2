@@ -122,7 +122,7 @@ public class Tabeller {
 
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
-		int t1=tabell1.length;
+	/*	int t1=tabell1.length;
 		int t2=tabell2.length;
 		int t3=t1+t2;
 		
@@ -138,6 +138,20 @@ public class Tabeller {
 			//System.out.println(tabell3[i]);
 		}
 		return tabell3;
+*/
+
+		int[] nyTabell = new int[tabell1.length + tabell2.length];
+		
+		int tab1 = tabell1.length;
+		int tab2 = tabell2.length;
+		
+		
+		for (int i = 0; i < tab1-1; i++ ) {
+			nyTabell[i] = tabell1[i];
+			
+			
+		}
+			return nyTabell;
 
 	}
 }
