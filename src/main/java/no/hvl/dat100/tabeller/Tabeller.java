@@ -1,5 +1,8 @@
 package no.hvl.dat100.tabeller;
 import static javax.swing.JOptionPane.*;
+
+import java.util.Arrays;
+
 import static java.lang.Integer.parseInt; 
 
 public class Tabeller {
@@ -122,11 +125,12 @@ public class Tabeller {
 
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
-		int t1=tabell1.length;
+		/*		int t1=tabell1.length;
 		int t2=tabell2.length;
 		int t3=t1+t2;
 		
 		int[] tabell3= new int[t3];
+		
 		for(int i=0;i<t1;i++) {
 			tabell3[i]=tabell1[i];
 		}
@@ -138,7 +142,28 @@ public class Tabeller {
 			//System.out.println(tabell3[i]);
 		}
 		return tabell3;
-
+		
+*/
+		
+		int tab1 = tabell1.length;
+		int tab2 = tabell2.length;
+		int tab3 = tab1 + tab2;
+		
+		int[] nyTabell = new int[tab3];
+		
+	
+		for (int i = 0; i < tab1; i++ ) 
+		
+				nyTabell[i] = tabell1[i];
+			
+			
+			for (int e = tab1; e < tab3; e++) {
+				nyTabell[e] = tabell2[e-tab1];
+				
+			} Arrays.sort(nyTabell);
+			
+			
+			return nyTabell; 
 
 	}
 }
