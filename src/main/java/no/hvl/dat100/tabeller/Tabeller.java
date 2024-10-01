@@ -10,8 +10,6 @@ public class Tabeller {
 			//System.out.print(i+" ");
 		}
 
-		// TODO
-
 	}
 
 	// b)
@@ -140,18 +138,7 @@ public class Tabeller {
 		return tabell3;
 */
 
-		int[] nyTabell = new int[tabell1.length + tabell2.length];
 		
-		int tab1 = tabell1.length;
-		int tab2 = tabell2.length;
-		
-		
-		for (int i = 0; i < tab1-1; i++ ) {
-			nyTabell[i] = tabell1[i];
-			
-			
-		}
-			return nyTabell;
 
 	}
 }
