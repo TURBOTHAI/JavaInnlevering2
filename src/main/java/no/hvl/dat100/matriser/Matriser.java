@@ -14,25 +14,24 @@ public class Matriser {
 	}
 
 	// b)
-	public static void tilStreng(int[][] matrise) {
+	 public static String tilStreng(int[][] matrise) {
+	    	
+	        String tabell = ""; 
 
-			int[][] tilStreng = {{1,2,3},{4,5,6},{7,8,9},};
+
+	        for (int i = 0; i < matrise.length; i++) {
+	            
+	            for (int j = 0; j < matrise[i].length; j++) {
+	            	
+	                tabell = matrise[i][j]+ " "; 
+	            }
+	            	tabell += "\n"; 
+	        	}
+
+	        	return tabell; 
+	    	}
 		
-		
-			for(int i=0 ; i<tilStreng.length; i++) {
-			
-				for (int j=0; j<tilStreng.length; j++) {
-				
-					System.out.print(tilStreng[i][j]);
-				
-					System.out.print(" ");
-				
-					}
-				System.out.print("\\n");
-			}
-		
-		
-	}
+	
 
 	// c)
 	public static int[][] skaler(int tall, int[][] matrise) {
