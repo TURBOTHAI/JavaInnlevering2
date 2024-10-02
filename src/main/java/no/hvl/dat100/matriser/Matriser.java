@@ -23,7 +23,7 @@ public class Matriser {
 	            
 	            for (int j = 0; j < matrise[i].length; j++) {
 	            	
-	                tabell = matrise[i][j]+ " "; 
+	                tabell += matrise[i][j]+ " "; 
 	            }
 	            	tabell += "\n"; 
 	        	}
