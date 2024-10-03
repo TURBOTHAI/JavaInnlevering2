@@ -53,11 +53,27 @@ int[][] nyMatrise = new int[matrise.length][];
 	}
 
 	// d)
-	public static boolean erLik(int[][] a, int[][] b) {
-
-		// TODO
-		throw new UnsupportedOperationException("Metoden erLik ikke implementert");
+		public static boolean erLik(int[][] mat1, int[][] mat2) {
 		
+		boolean svar = false;
+		
+		if(mat1.length == mat2.length) {
+			
+		for(int i=0 ; i<mat1.length; i++) {
+			
+			if(mat1[i].length == mat2[i].length) {
+			
+			for (int j=0; j<mat1[i].length; j++) {
+			
+				if(mat1[i][j] == mat2[i][j]) {
+					svar = true;
+				}
+				
+			}
+		}
+	}
+	}
+			return svar;
 	}
 	
 	// e)
