@@ -53,7 +53,7 @@ int[][] nyMatrise = new int[matrise.length][];
 	}
 
 	// d)
-		public static boolean erLik(int[][] mat1, int[][] mat2) {
+	public static boolean erLik(int[][] mat1, int[][] mat2) {
 		
 		boolean svar = false;
 		
@@ -71,7 +71,7 @@ int[][] nyMatrise = new int[matrise.length][];
 				
 			}
 		}
-	}
+	 }
 	}
 			return svar;
 	}
